@@ -1,103 +1,95 @@
 body {
-    width: 1020;
+    width: 1020px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: "Lato";
 }
 
         /*HEADER*/
-h1 {
+        
+header {
+    height: 190px;
+    background-color: #2d303a;
+}
+
+.title {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
     font-weight: 900;
     padding: 69px 0 0 40px;
     letter-spacing: -0.2;
     text-align: left;
 }
 
-header {
-    width: 1020px;
-    height: 190px;
-    background-color: #2d303a;
-}
-
-.title {
-    width: 940px;
+.title_desription {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    padding: 28px 0 0 40px;
+    padding: 29px 0 0 40px;
     letter-spacing: -0.2;
-    font-family: "Lato";
     font-weight: 300;
     text-align: left;
 }
 
 .tags {
-    display: flex;
-    padding: 10px 0 0 42px;
+    padding: 9px 0 0 42px;;
 }
 
-.tags>div {
+.tag {
+    display: inline-block;
     font-size: 12px;
     line-height: 20px;
     color: #767e9e;
-    font-family: "Lato";
     font-weight: 400;
     text-align: left;
     border-radius: 5px;
     letter-spacing: -0.1;
     background-color: #2d303a;
     border: 1px solid #666d89;
-    margin: 0px 11px 0 0;
+    margin-right: 6px;
     padding: 0px 6px 0px 6px;
     cursor: pointer;
 }
 
-.tags>div:first-child {
-    font-size: 12px;
-    line-height: 20px;
+.tag.active {
     color: #c5c5c5;
-    font-family: "Lato";
-    font-weight: 400;
-    text-align: left;
-    border-radius: 5px;
-    letter-spacing: -0.1;
-    background-color: #2d303a;
     border: 1px solid #c5c5c5;
-    margin: 0px 11px 0 0;
-    padding: 0px 6px 0px 6px;
+    margin-right: 7px;
 }
 
-.pic_place {
+.tag:hover {
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
+}
+
+.pic-place {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    width: 940;
     height: 601px;
-    padding: 6px 40 67px 40;
+    padding: 6px 40px 67px 40px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
 }
 
-.pic_place>img {
-    flex-basis: 220px; height: 187px;
+.pic-place>img:nth-child(n + 13) {
+    display: none;
 }
 
         /*FOOTER*/
 
 footer {
-    width: 1020px;
-    height: 728px;
+    padding-bottom: 65px;
     background-color: #f2f2f2;
     border-bottom: solid 6px #ffffff;
 }
 
-.about>div {
+.about_title {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
     letter-spacing: -0.2px;
     font-weight: 900;
     text-align: left;
@@ -105,69 +97,65 @@ footer {
 }
 
 .about_description {
-    width: 940px;
+    
     height: 57px;
     font-size: 18px;
     line-height: 30px;
-    padding: 19px 0px 0px 40px;
+    padding: 19px 42px 0px 40px;
     color: #767e9e;
-    font-family: "Lato";
     font-weight: 300;
     text-align: justify;
     letter-spacing: -0.2;
 }
 
-.avatar {
+.avatars {
     display: flex;
     width: 940;
     justify-content: space-between;
     padding: 46px 40px 0px 40px;
 }
 
-.avatar_block {
+.avatar-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex-basis: 300px;
-    height: 443px;
 }
 
-.avatar_desmond {
+
+.avatar-block:nth-child(2) {
     padding-right: 2px;
 }
 
-.avatar_name {
+.avatar-name {
     font-size: 18px;
-    line-height: 18px;
     padding-top: 17px;
-    padding-bottom: 12px;
-    width: 300px;
-    height: 18;
+    max-width: 300px;
     letter-spacing: -0.2;
     color: #666d89;
-    font-family: "Lato";
     font-weight: 900;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
-.avatar_block p {
+.avatar-description {
     width: 300px;
-    height: 175px;
     font-size: 12px;
     line-height: 21px;
     color: #767e9e;
-    font-family: "Lato";
     font-weight: 400;
     text-align: left;
     padding-top: 11px;
     letter-spacing: -0.1;
 }
 
-.avatar_links {
+.avatar-links {
     display: flex;
     justify-content: space-between;
     width: 154px;
     padding-top: 22px;
+}
+
+.avatar-block:nth-child(3) > .avatar-links{
+    margin-left: -1px;
 }
