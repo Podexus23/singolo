@@ -159,13 +159,12 @@ textarea[placeholder] {
     letter-spacing: -0.2px;
 }
 
-.social_links {
-    display: inline-block;
+.social-links {
     float: right;
     padding: 21px 39px 0px 0;
 }
 
-.social_links a {
+.social-links a {
     padding-left: 2px;
 }
 
