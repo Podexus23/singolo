@@ -15,7 +15,6 @@ body {
     width: 1020px;
     overflow-x: hidden;
     margin: 0 auto;
-    font-family: "Lato";
 }
    
                                                             /*header*/
@@ -44,12 +43,11 @@ header {
 }
 
 .title {
-    padding: 34px 0px 36 40px;
-    letter-spacing: -0.7;
+    padding: 32px 0px 36 41px;
+    letter-spacing: -0.8;
     font-size: 25px;
     color: #ffffff;
-    font-family: "Lato";
-    font-weight: 700;
+    font-family: "Lato700";
     width: 1020px;
 }
 
@@ -75,8 +73,7 @@ nav {
     width: 700px;
     font-size: 12px;
     color: #f06c64;
-    font-family: "Lato";
-    font-weight: 700;
+    font-family: "Lato700";
     text-align: justify;
 }
 
@@ -142,7 +139,7 @@ nav {
 
 .our_services {
     
-    font-family: "Lato";
+    font-family: "Lato700";
     margin: 0%;
     height: 494px;
     background-color: #f2f2f2;
@@ -153,8 +150,7 @@ h2 {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato900";
     text-align: justify;
     padding: 68px 0 0px 40px;
 }
@@ -165,11 +161,11 @@ h2 {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "Lato";
+    font-family: "Lato300";
     font-weight: 300;
     text-align: justify;
-    margin: 28px 0 0 40px;
-    letter-spacing: -0.05;
+    margin: 27px 0 0 40px;
+    letter-spacing: -0.2;
 }
 
 .servmenu {
@@ -201,19 +197,22 @@ h2 {
     font-size: 18px;
     line-height: 13px;
     color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato900";
+    
     text-align: justify;
     margin-bottom: 14px;
+}
+
+.col2 h3{
+    letter-spacing: -0.4px;
 }
 
 .serv p {
     width: 219px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21px;
     color: #767e9e;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato400";
     text-align: justify;
     word-break: break-all;
     display: block;
@@ -226,7 +225,7 @@ h2 {
 
 .serv h3,p{
     margin-left: 80px;
-    letter-spacing: -0.1px;
+   
 }
 
 .about p {
@@ -250,9 +249,9 @@ h2 {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-weight: 900;
-    padding: 69px 0 0 40px;
-    letter-spacing: -0.2;
+    font-family: "Lato900";
+    padding: 68px 0 0 40px;
+    letter-spacing: 0.2;
     text-align: justify;
 }
 
@@ -260,14 +259,14 @@ h2 {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    padding: 29px 0 0 40px;
+    padding: 27px 0 0 40px;
     letter-spacing: -0.2;
-    font-weight: 300;
+    font-family: "Lato300";
     text-align: justify;
 }
 
 .tags {
-    padding: 9px 0 0 42px;;
+    padding: 11px 0 0 42px;
 }
 
 .tag {
@@ -275,7 +274,8 @@ h2 {
     font-size: 12px;
     line-height: 20px;
     color: #767e9e;
-    font-weight: 400;
+    font-family: "Lato400";
+    
     text-align: justify;
     border-radius: 5px;
     letter-spacing: -0.1;
@@ -325,28 +325,27 @@ h2 {
     line-height: 18px;
     color: #666d89;
     letter-spacing: -0.2px;
-    font-weight: 900;
+    font-family: "Lato900";
     text-align: justify;
-    padding: 68px 0px 10px 40px;
+    padding: 68px 0px 10px 41px;
 }
 
 .about_description {
-    
     height: 57px;
     font-size: 18px;
     line-height: 30px;
-    padding: 19px 42px 0px 40px;
+    padding: 17px 42px 0px 40px;
     color: #767e9e;
-    font-weight: 300;
+    font-family: "Lato300";
     text-align: justify;
-    letter-spacing: -0.2;
+    letter-spacing: -0.13px;
 }
 
 .avatars {
     display: flex;
     width: 940;
     justify-content: space-between;
-    padding: 46px 40px 0px 40px;
+    padding: 48px 40px 0px 40px;
 }
 
 .avatar-block {
@@ -363,9 +362,10 @@ h2 {
     font-size: 18px;
     padding-top: 17px;
     max-width: 300px;
-    letter-spacing: -0.2;
+    letter-spacing: 0.1px;
     color: #666d89;
-    font-weight: 900;
+    
+    font-family: "Lato900";
     text-align: justify;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -377,10 +377,10 @@ h2 {
     font-size: 12px;
     line-height: 21px;
     color: #767e9e;
-    font-weight: 400;
+    font-family: "Lato400";
     text-align: justify;
-    padding-top: 11px;
-    letter-spacing: -0.1;
+    padding-top: 10px;
+    letter-spacing: -0.15;
     margin: 0;
 }
 
@@ -388,7 +388,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 154px;
-    padding-top: 22px;
+    padding-top: 23px;
 }
 
 .avatar-block:nth-child(3) > .avatar-links{
@@ -400,7 +400,7 @@ body {
     width: 1020px;
     margin: 0 auto;
     overflow-x: hidden;
-    font-family: "Lato";
+    
 }
 
 .quote {
@@ -414,12 +414,11 @@ body {
     font-size: 30px;
     line-height: 18px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato900";
     text-align: justify;
     height: 40px;
-    padding: 69px 0px 0px 40px;
-    letter-spacing: -0.2;
+    padding: 68px 0px 0px 40px;
+    letter-spacing: -0.19;
 }
 
 .quote-desc {
@@ -428,11 +427,10 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 300;
+    font-family: "Lato300";
     text-align: justify;
-    padding: 6px 0px 0 40px;
-    letter-spacing: -0.1;
+    padding: 5px 0px 0 40px;
+    letter-spacing: -0.24;
 }
 
 
@@ -448,7 +446,7 @@ footer {
     justify-content: space-between;
     height: 364px;
     width: 951;
-    margin: 45px 0 0px 40px;
+    margin: 47px 0 0px 40px;
 }
 
 .container {
@@ -467,10 +465,10 @@ footer {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato400";
     text-align: justify;
     text-indent: 15px;
+    padding-bottom: 2px;
 }
 
 .container [type="submit"] {
@@ -488,7 +486,7 @@ footer {
 }
 
 textarea[placeholder] {
-    padding: 7px 0px 0px 0px;
+    padding: 7px 0px 0px 2px;
 }
 
 .container input:last-child[placeholder] {
@@ -499,6 +497,7 @@ textarea[placeholder] {
 ::placeholder{
     color: #f48c8f;
     vertical-align: top;
+    
 }
 
 .our-info {
@@ -514,9 +513,9 @@ textarea[placeholder] {
     font-size: 18px;
     line-height: 18px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 900;
+    font-family: "Lato900";
     text-align: justify;
+    letter-spacing: 0.1px;
 }
 
 .info-description {
@@ -524,19 +523,18 @@ textarea[placeholder] {
     width: 300px;
     line-height: 22px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato400";
     text-align: justify;
-    letter-spacing: -0.2px;
-    padding-bottom: 10px;
+    letter-spacing: -0.15px;
+    padding-bottom: 13px;
 }
 
 .info-contacts {
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
-    font-family: "Lato";
-    font-weight: 400;
+    font-family: "Lato400";
+    
     text-align: justify;    
     letter-spacing: -0.1px;
 }
@@ -551,7 +549,7 @@ textarea[placeholder] {
     font-size: 12px;
     line-height: 20px;
     color: #767e9e;
-    font-weight: 400;
+    font-family: "Lato400";
     display: inline-block;
     padding: 28px 0 0px 42px;
     letter-spacing: -0.2px;
