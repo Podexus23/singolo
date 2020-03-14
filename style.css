@@ -29,6 +29,7 @@ h1>a:hover {
 .navbar a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .navbar a:hover {
@@ -37,7 +38,9 @@ h1>a:hover {
 
 header {
     display: flex;
+    position: fixed;
     background-color: #2D303A;
+    width: 1020px;
     height: 89px;
     border-bottom: 6px solid #323746;
 }
@@ -48,7 +51,7 @@ header {
     font-size: 25px;
     color: #ffffff;
     font-family: "Lato700";
-    width: 1020px;
+    
 }
 
 .title a::after {
@@ -69,7 +72,7 @@ header {
 
 nav {
     letter-spacing: -0.05px;
-    margin: 44px 22px 00 00;
+    margin: 44px 22px 0px 426px;
     width: 700px;
     font-size: 12px;
     color: #f06c64;
@@ -91,48 +94,121 @@ nav {
 
                                                             /*slider*/
 
-.slider {
-    width: 1020px;
-    display: flex;
-    height: 594px;
-    background-color: #f06c64;
-    border-bottom: 6px solid #ea676b;
+
+/* new slider */
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
 }
 
-.phonehorz {
-    display: flex;
-    width: 484;
-    height: 240;
-    justify-content: flex-end;
-    margin: 174px 0px 0px 73px;
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  height: 100px;
+  height: 594px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+
+.second-slide {
+    background-image: url("assets/Slider2.png");
+    border-bottom: 6px solid #5482F6;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+    margin-left: 20px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right: 15px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* .phonehorz {
+    margin: auto;
 }
 
 .phonevert {
+    margin: auto;
+} */
+
+.phone-block{
+    max-width: 90%;
     display: flex;
-    width: 240;
-    height: 483;
-    justify-content: left;
-    margin: 53px 0 0px 54px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin: auto;
 }
 
-.arrow {
-    width: 16px;
-    height: 27px;
-    opacity: 1;
+.phone-one{
+    background-size: contain;
+    width: 27%;
+    height: 81%;
+    background-repeat: no-repeat;
+    margin-left: 6.6%;
+    background-image: url(assets/iPhone-Vertical.png);
     cursor: pointer;
 }
-
-.arrow:hover {
-    pointer-events: cursor;
-    opacity: 0.5;
+.phone-one-off{
+    background-image: url(assets/iPhone-VerticalOff.png);
 }
 
-.arrow-left {
-    margin: 281px 0px 0px 42px;
+.phone-two {
+    width: 53.25%;
+    height: 41%;
+    margin-right: 6%;
+    background-repeat: no-repeat;
+    background-image: url(assets/iPhone-Horizontal.png);
+    cursor: pointer;
 }
-
-.arrow-right {
-    margin: 281px 0px 10 55px;
+.phone-two-off{
+    background-image: url(assets/iPhone-HorizontalOff.png);
+    margin: 0px 56px 4px 0px;
 }
 
                                                             /*services*/
