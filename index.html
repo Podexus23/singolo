@@ -6,7 +6,24 @@
         <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
 </head>
-<body>
+<body onscroll="changeActiveHeaderElement()">
+    <!-- modal -->
+        <div id="modal-window" class="modal">
+          <span onclick="closeModal()" class="close" title="Close Modal">&times;</span>
+          <div class="modal-content">
+                <div class="modal-container">
+                  <div class="modal-text">
+                      <p>Письмо отправлено</p>
+                      <p id='subject-text'></p>
+                      <p id='description-text'></p>
+                  </div>
+                  <button class='confirm-action' onclick="closeModal()">Ok</button>
+                </div>
+           </div>
+        </div>
+    <!-- end modal window -->
+
+
     <header>
         <div class="title">
             <h1><a href="#">SINGOLO</a></h1>                
@@ -14,16 +31,16 @@
         <nav>
             
             <ul class="navbar">
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#services">SERVICES</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li class="header-element" onclick='setActiveElement(event)'><a href="#home">HOME</a></li>
+                <li class="header-element" onclick='setActiveElement(event)'><a href="#services">SERVICES</a></li>
+                <li class="header-element" onclick='setActiveElement(event)'><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="header-element" onclick='setActiveElement(event)'><a href="#about">ABOUT</a></li>
+                <li class="header-element" onclick='setActiveElement(event)'><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
+    <a name="home"></a>
     <div class="slideshow-container">
-        <a name="home"></a>
   <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
           <div class="phone-block">
@@ -41,7 +58,6 @@
       <a class="prev" onclick="plusSlides(-1)"><img src="assets/ArrowLeft.svg" alt="left arrow"></a>
       <a class="next" onclick="plusSlides(1)"><img src="assets/ArrowRight.svg" alt="right arrow"></a>
     </div>
-    
     <div class="our_services">
         <a name="services"></a>
         <div class="MainSerInfo">
@@ -115,18 +131,18 @@
         </div>
 
         <div class="pic-place">
-            <div class="picture-block art"><img src="assets/01.png" alt="picture"></div>
-            <div class="picture-block web"><img src="assets/02.png" alt="picture"></div>
-            <div class="picture-block graph"><img src="assets/03.png" alt="picture"></div>
-            <div class="picture-block graph"><img src="assets/04.png" alt="picture"></div>
-            <div class="picture-block graph"><img src="assets/05.png" alt="picture"></div>
-            <div class="picture-block web"><img src="assets/06.png" alt="picture"></div>
-            <div class="picture-block web"><img src="assets/07.png" alt="picture"></div>
-            <div class="picture-block web"><img src="assets/08.png" alt="picture"></div>
-            <div class="picture-block graph"><img src="assets/09.png" alt="picture"></div>
-            <div class="picture-block art"><img src="assets/10.png" alt="picture"></div>
-            <div class="picture-block art"><img src="assets/11.png" alt="picture"></div>
-            <div class="picture-block art"><img src="assets/12.png" alt="picture"></div>
+            <div class="picture-block art first-pic" onclick='makeActive(event)'><img src="assets/01.png" alt="picture"></div>
+            <div class="picture-block web" onclick='makeActive(event)'><img src="assets/02.png" alt="picture"></div>
+            <div class="picture-block graph" onclick='makeActive(event)'><img src="assets/03.png" alt="picture"></div>
+            <div class="picture-block graph" onclick='makeActive(event)'><img src="assets/04.png" alt="picture"></div>
+            <div class="picture-block graph" onclick='makeActive(event)'><img src="assets/05.png" alt="picture"></div>
+            <div class="picture-block web" onclick='makeActive(event)'><img src="assets/06.png" alt="picture"></div>
+            <div class="picture-block web third-pic" onclick='makeActive(event)'><img src="assets/07.png" alt="picture"></div>
+            <div class="picture-block web third-pic" onclick='makeActive(event)'><img src="assets/08.png" alt="picture"></div>
+            <div class="picture-block graph first-pic" onclick='makeActive(event)'><img src="assets/09.png" alt="picture"></div>
+            <div class="picture-block art" onclick='makeActive(event)'><img src="assets/10.png" alt="picture"></div>
+            <div class="picture-block art second-pic" onclick='makeActive(event)'><img src="assets/11.png" alt="picture"></div>
+            <div class="picture-block art second-pic" onclick='makeActive(event)'><img src="assets/12.png" alt="picture"></div>
             <!-- more than 12 are hidden -->
             <img src="assets/10.png" alt="picture">
             <img src="assets/11.png" alt="picture">
@@ -186,12 +202,12 @@
     
     <div class="information">
         <a name="contact"></a>
-        <form action="/name" method="POST" class="container">
-                <input type="text" placeholder="Name (Required)" required> 
-                <input type="email" placeholder="Email (Required)" required>
-                <input type="text" placeholder="Subject">
+        <form class="container">
+                <input type="text" name="name" placeholder="Name (Required)" required> 
+                <input type="email" name="email" placeholder="Email (Required)" required>
+                <input type="text" name="subject" placeholder="Subject">
                 <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe your project in detail..." ></textarea>
-                <input type="submit" value="Submit">
+                <input type='button' value='submit' onclick="openModal()">
         </form>
 
         <div class="our-info">
