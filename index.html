@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     <title>Singolo</title>
 </head>
-<body onscroll="changeActiveHeaderElement()">
+<body>
     <!-- modal -->
         <div id="modal-window" class="modal">
           <span onclick="closeModal()" class="close" title="Close Modal">&times;</span>
@@ -31,16 +31,15 @@
         <nav>
             
             <ul class="navbar">
-                <li class="header-element" onclick='setActiveElement(event)'><a href="#home">HOME</a></li>
-                <li class="header-element" onclick='setActiveElement(event)'><a href="#services">SERVICES</a></li>
-                <li class="header-element" onclick='setActiveElement(event)'><a href="#portfolio">PORTFOLIO</a></li>
-                <li class="header-element" onclick='setActiveElement(event)'><a href="#about">ABOUT</a></li>
-                <li class="header-element" onclick='setActiveElement(event)'><a href="#contact">CONTACT</a></li>
+                <li class="header-element" data-target="#home" onclick='setActiveElement(event, "#home")'><a >HOME</a></li>
+                <li class="header-element" data-target="#services" onclick='setActiveElement(event, "#services")'><a >SERVICES</a></li>
+                <li class="header-element" data-target="#portfolio" onclick='setActiveElement(event, "#portfolio")'><a >PORTFOLIO</a></li>
+                <li class="header-element" data-target="#about" onclick='setActiveElement(event, "#about")'><a >ABOUT</a></li>
+                <li class="header-element" data-target="#contact" onclick='setActiveElement(event, "#contact")'><a>CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <a name="home"></a>
-    <div class="slideshow-container">
+    <div class="slideshow-container" id="home">
   <!-- Full-width images with number and caption text -->
       <div class="mySlides fade">
           <div class="phone-block">
@@ -58,8 +57,7 @@
       <a class="prev" onclick="plusSlides(-1)"><img src="assets/ArrowLeft.svg" alt="left arrow"></a>
       <a class="next" onclick="plusSlides(1)"><img src="assets/ArrowRight.svg" alt="right arrow"></a>
     </div>
-    <div class="our_services">
-        <a name="services"></a>
+    <div class="our_services" id="services">
         <div class="MainSerInfo">
             <h2>Our Services</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -117,9 +115,8 @@
         </div>
     </div>
     <!-- singolo2 -->
-    <div class="portfolio-block">
-        <a name="portfolio"></a>
-        <div class="portfolio">
+    <div class="portfolio-block" id="portfolio">
+        <div class="portfolio" >
             <h1 class="portfolio-title">Portfolio</h1>
             <div class="title-desription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
             <ul class="tags">
@@ -150,9 +147,8 @@
         </div>
     </div>
 
-    <div class="about_us">
-        <a name="about"></a>
-        <div class="about">
+    <div class="about_us" id="about">
+        <div class="about" >
             <p class="about_title">About Us</p>
             <p class="about_description">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus ommodo, tortor mauris condimentum nibh.
@@ -200,8 +196,7 @@
         <div class="quote-title">Get a Quote</div>
         <div class="quote-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
     
-    <div class="information">
-        <a name="contact"></a>
+    <div class="information" id="contact">
         <form class="container">
                 <input type="text" name="name" placeholder="Name (Required)" required> 
                 <input type="email" name="email" placeholder="Email (Required)" required>
