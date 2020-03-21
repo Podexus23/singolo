@@ -29,6 +29,7 @@ h1>a:hover {
 .navbar a {
     text-decoration: none;
     color: white;
+    cursor: pointer;
 }
 
 .navbar a:hover {
@@ -37,9 +38,12 @@ h1>a:hover {
 
 header {
     display: flex;
+    position: fixed;
     background-color: #2D303A;
+    width: 1020px;
     height: 89px;
     border-bottom: 6px solid #323746;
+    z-index: 5;
 }
 
 .title {
@@ -48,7 +52,7 @@ header {
     font-size: 25px;
     color: #ffffff;
     font-family: "Lato700";
-    width: 1020px;
+    
 }
 
 .title a::after {
@@ -69,70 +73,136 @@ header {
 
 nav {
     letter-spacing: -0.05px;
-    margin: 44px 22px 00 00;
+    margin: 43px 22px 0px 453px;
     width: 700px;
-    font-size: 12px;
+    font-size: 11.4px;
     color: #f06c64;
     font-family: "Lato700";
     text-align: justify;
 }
+
 
 .navbar li {
     display: inline;
     color:#ffffff;
 }
 
+.navbar li:first-child::before {
+    padding-left: 12px;
+    padding-right: 14px;
+    color: #494e62;
+    content: none;
+}
+
 .navbar li::before {
-    padding-left: 10px;
-    padding-right: 13px;
+    padding-left: 12px;
+    padding-right: 14px;
     color: #494e62;
     content: '\00B7';
 }
 
+.header-active > a {
+    color: #F06C64;
+}
+
                                                             /*slider*/
 
+
+.slider__container {
+  padding-top: 95px;
+  overflow: hidden;
+  position: relative;
+}
+
 .slider {
-    width: 1020px;
     display: flex;
+    min-width: 2040px;
+    transition: all 1s;
+}
+
+.slide-block {
     height: 594px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+    width: 1020px;
 }
 
-.phonehorz {
+.second-slide {
+    background-image: url("assets/Slider2.png");
+    border-bottom: 6px solid #5482F6;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev {
+    margin-left: 20px;
+}
+
+.next {
+  left: 950px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.phone-block{
+    max-width: 90%;
     display: flex;
-    width: 484;
-    height: 240;
-    justify-content: flex-end;
-    margin: 174px 0px 0px 73px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+    margin: auto;
 }
 
-.phonevert {
-    display: flex;
-    width: 240;
-    height: 483;
-    justify-content: left;
-    margin: 53px 0 0px 54px;
+.phone-one {
+    width: 23.5%;
+    height: 77%;
+    margin-left: 6.6%;
+    margin-bottom: 3.5%;
+    box-shadow: 25px 26px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 27px;
+    cursor: pointer;
+    background-image: url(assets/phone-vertical.png);
+    background-repeat: no-repeat;
 }
 
-.arrow {
-    width: 16px;
-    height: 27px;
-    opacity: 1;
+.phone-one-off{
+    background-image: url(assets/phone-verticaloff.png);
+}
+
+.phone-two {
+    width: 50%;
+    height: 36%;
+    margin-bottom: 3.5%;
+    border-radius: 26px;
+    margin-right: 9.3%;
+    background-repeat: no-repeat;
+    box-shadow: 25px 25px 0px rgba(0, 0, 0, 0.15);
+    background-image: url(assets/phone-horizontal-on.png);
     cursor: pointer;
 }
-
-.arrow:hover {
-    pointer-events: cursor;
-    opacity: 0.5;
-}
-
-.arrow-left {
-    margin: 281px 0px 0px 42px;
-}
-
-.arrow-right {
-    margin: 281px 0px 10 55px;
+.phone-two-off{
+    background-image: url(assets/phone-horizontal.png);
+    
 }
 
                                                             /*services*/
@@ -238,7 +308,9 @@ h2 {
     margin: -1px 0px 0px -1px;
 }
                                                             /* SINGOLO2 */
-
+.portfolio-block {
+    height: 866px;
+}
 
 .portfolio {
     height: 190px;
@@ -302,10 +374,11 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    height: 601px;
-    padding: 5px 40px 67px 40px;
+    height: 70.4%;
+    width: 93.2%;
+    padding: 0px 35px 62px 35px;
     background-color: #2d303a;
-    border-bottom: 6px solid #323746;
+    border-bottom: 5px solid #323746;
 }
 
 .pic-place>img:nth-child(n + 13) {
@@ -453,7 +526,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 418px;
+    height: 115%;
+    width: 68%;
 }
 
 .container form,input,textarea {
@@ -471,9 +545,11 @@ footer {
     padding-bottom: 2px;
 }
 
-.container [type="submit"] {
+.container [value="submit"] {
+    background-color: #FBC65F;
     width: 80px;
     cursor: pointer;
+    color: #886A30;
 }
 
 .container textarea {
@@ -503,10 +579,10 @@ textarea[placeholder] {
 .our-info {
     display: flex;
     flex-direction: column;
-    height: 202px;
+    height: 55.5%;
     justify-content: space-between;
     letter-spacing: -0.1;
-    width: 311px;
+    width: 33%;
 }
 
 .info-title {
@@ -575,4 +651,83 @@ textarea[placeholder] {
 
 .email img{
     margin-right: 8px;
+}
+
+.picture-block {
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    cursor: pointer;
+}
+
+.picture-block:hover {
+    border: 5px solid #9c27b063;
+}
+
+.picture-block.active {
+    border: 5px solid #F06C64;
+}
+
+/* Modal styles */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d6e;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  max-width: 930px;
+  background-color: #fefefe;
+  border-radius: 6px;
+  margin: 4% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #8c3d3f;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.confirm-action {
+    width: 50%;
+    background-color: #8c3d3f;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.confirm-action:hover {
+    background-color: #a72f34;
+}
+
+.modal-container {
+  padding: 16px;
+  text-align: center;
+}
+
+.modal-text {
+    padding: 30px;
+    color: #a72f34;
+}
+
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
 }

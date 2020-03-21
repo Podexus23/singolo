@@ -7,27 +7,58 @@
     <title>Singolo</title>
 </head>
 <body>
+    <!-- modal -->
+        <div id="modal-window" class="modal">
+          <span onclick="closeModal()" class="close" title="Close Modal">&times;</span>
+          <div class="modal-content">
+                <div class="modal-container">
+                  <div class="modal-text">
+                      <p>Письмо отправлено</p>
+                      <p id='subject-text'></p>
+                      <p id='description-text'></p>
+                  </div>
+                  <button class='confirm-action' onclick="closeModal()">Ok</button>
+                </div>
+           </div>
+        </div>
+    <!-- end modal window -->
+
+
     <header>
         <div class="title">
             <h1><a href="#">SINGOLO</a></h1>                
         </div>
         <nav>
+            
             <ul class="navbar">
-                <span><a href="#">HOME</a></span>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li class="header-element" data-target="#home" onclick='setActiveElement(event, "#home")'><a >HOME</a></li>
+                <li class="header-element" data-target="#services" onclick='setActiveElement(event, "#services")'><a >SERVICES</a></li>
+                <li class="header-element" data-target="#portfolio" onclick='setActiveElement(event, "#portfolio")'><a >PORTFOLIO</a></li>
+                <li class="header-element" data-target="#about" onclick='setActiveElement(event, "#about")'><a >ABOUT</a></li>
+                <li class="header-element" data-target="#contact" onclick='setActiveElement(event, "#contact")'><a>CONTACT</a></li>
             </ul>
         </nav>
     </header>
-    <div class="slider">
-        <img src="assets/ArrowLeft.svg" alt="left arrow" class="arrow-left arrow">
-        <img src="assets/iPhone Vertical.png" alt="mobile" class="phonevert">
-        <img src="assets/iPhone Horizontal.png" alt="mobile" class="phonehorz">
-        <img src="assets/ArrowRight.svg" alt="right arrow" class="arrow-right arrow">
+
+
+    <div class="slider__container" id="home">
+        <div class="slider" data-js="sslide">
+             <div class="slide-block">
+                  <div class="phone-block">
+                      <div class="phone-one" onclick="switchFirstPhone()"></div>
+                      <div class="phone-two" onclick="switchSecondPhone()"></div>
+                  </div>
+             </div>
+             <div class="slide-block second-slide">
+                 
+             </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"><img src="assets/ArrowLeft.svg" alt="left arrow"></a>
+        <a class="next" onclick="plusSlides(1)"><img src="assets/ArrowRight.svg" alt="right arrow"></a>
     </div>
-    <div class="our_services">
+
+
+    <div class="our_services" id="services">
         <div class="MainSerInfo">
             <h2>Our Services</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -85,31 +116,31 @@
         </div>
     </div>
     <!-- singolo2 -->
-    <div class="portfolio-block">
-        <div class="portfolio">
+    <div class="portfolio-block" id="portfolio">
+        <div class="portfolio" >
             <h1 class="portfolio-title">Portfolio</h1>
             <div class="title-desription">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</div>
             <ul class="tags">
-                <li class="tag active">All</li>
-                <li class="tag">Web Design</li>
-                <li class="tag">Graphic Design</li>
-                <li class="tag">Artwork</li>
+                <li class="tag all-tag active" onclick="togglePictureBlock('all')">All</li>
+                <li class="tag web-tag" onclick="togglePictureBlock('web')">Web Design</li>
+                <li class="tag graph-tag" onclick="togglePictureBlock('graph')">Graphic Design</li>
+                <li class="tag art-tag" onclick="togglePictureBlock('art')">Artwork</li>
             </ul>
         </div>
 
         <div class="pic-place">
-            <img src="assets/01.png" alt="picture">
-            <img src="assets/02.png" alt="picture">
-            <img src="assets/03.png" alt="picture">
-            <img src="assets/04.png" alt="picture">
-            <img src="assets/05.png" alt="picture">
-            <img src="assets/06.png" alt="picture">
-            <img src="assets/07.png" alt="picture">
-            <img src="assets/08.png" alt="picture">
-            <img src="assets/09.png" alt="picture">
-            <img src="assets/10.png" alt="picture">
-            <img src="assets/11.png" alt="picture">
-            <img src="assets/12.png" alt="picture">
+            <div class="picture-block art first-pic" onclick='makeActive(event)'><img src="assets/01.png" alt="picture"></div>
+            <div class="picture-block web" onclick='makeActive(event)'><img src="assets/02.png" alt="picture"></div>
+            <div class="picture-block graph" onclick='makeActive(event)'><img src="assets/03.png" alt="picture"></div>
+            <div class="picture-block graph" onclick='makeActive(event)'><img src="assets/04.png" alt="picture"></div>
+            <div class="picture-block graph" onclick='makeActive(event)'><img src="assets/05.png" alt="picture"></div>
+            <div class="picture-block web" onclick='makeActive(event)'><img src="assets/06.png" alt="picture"></div>
+            <div class="picture-block web third-pic" onclick='makeActive(event)'><img src="assets/07.png" alt="picture"></div>
+            <div class="picture-block web third-pic" onclick='makeActive(event)'><img src="assets/08.png" alt="picture"></div>
+            <div class="picture-block graph first-pic" onclick='makeActive(event)'><img src="assets/09.png" alt="picture"></div>
+            <div class="picture-block art" onclick='makeActive(event)'><img src="assets/10.png" alt="picture"></div>
+            <div class="picture-block art second-pic" onclick='makeActive(event)'><img src="assets/11.png" alt="picture"></div>
+            <div class="picture-block art second-pic" onclick='makeActive(event)'><img src="assets/12.png" alt="picture"></div>
             <!-- more than 12 are hidden -->
             <img src="assets/10.png" alt="picture">
             <img src="assets/11.png" alt="picture">
@@ -117,8 +148,8 @@
         </div>
     </div>
 
-    <div class="about_us">
-        <div class="about">
+    <div class="about_us" id="about">
+        <div class="about" >
             <p class="about_title">About Us</p>
             <p class="about_description">
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus ommodo, tortor mauris condimentum nibh.
@@ -162,16 +193,17 @@
     </div>
     <!-- singolo3 -->
     <div class ="quote">
+        <a name="quote"></a>
         <div class="quote-title">Get a Quote</div>
         <div class="quote-desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</div>
     
-    <div class="information">
-        <form action="/name" method="POST" class="container">
-                <input type="text" placeholder="Name (Required)" required> 
-                <input type="email" placeholder="Email (Required)" required>
-                <input type="text" placeholder="Subject">
+    <div class="information" id="contact">
+        <form class="container">
+                <input type="text" name="name" placeholder="Name (Required)" required> 
+                <input type="email" name="email" placeholder="Email (Required)" required>
+                <input type="text" name="subject" placeholder="Subject">
                 <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe your project in detail..." ></textarea>
-                <input type="submit" value="Submit">
+                <input type='button' value='submit' onclick="openModal()">
         </form>
 
         <div class="our-info">
@@ -210,5 +242,6 @@
         <a href="#"><img src="assets/LinkedIn.png" alt=""></a>
     </div>
 </footer>
+    <script src="script.js"></script>
 </body>
 </html>
