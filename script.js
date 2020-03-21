@@ -1,21 +1,15 @@
-var slideIndex = 1;
-              showSlides(slideIndex);
-          
-              // Next/previous controls
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-              }
-          
-              function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                slides[slideIndex-1].style.display = "flex";
-              }
+const slider = document.querySelector('.slider');
+let currentSlide = 1;
+
+function plusSlides() {
+  if (currentSlide === 1) {
+    currentSlide = 2;
+    slider.style.transform = 'translateX(-50%)';
+  } else {
+    slider.style.transform = 'translateX(0%)';
+    currentSlide = 1;
+  }
+}
 
 function switchFirstPhone() {
     document.querySelector(".phone-one").classList.toggle("phone-one-off");

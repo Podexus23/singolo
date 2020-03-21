@@ -108,27 +108,30 @@ nav {
                                                             /*slider*/
 
 
-/* new slider */
-
-.slideshow-container {
-  position: relative;
+.slider__container {
   padding-top: 95px;
+  overflow: hidden;
+  position: relative;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  height: 100px;
-  height: 594px;
-  background-color: #f06c64;
-  border-bottom: 6px solid #ea676b;
+.slider {
+    display: flex;
+    min-width: 2040px;
+    transition: all 1s;
+}
+
+.slide-block {
+    height: 594px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+    width: 1020px;
 }
 
 .second-slide {
     background-image: url("assets/Slider2.png");
     border-bottom: 6px solid #5482F6;
 }
-/* Next & previous buttons */
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -148,35 +151,16 @@ nav {
     margin-left: 20px;
 }
 
-/* Position the "next button" to the right */
 .next {
-  right: 0;
-  margin-right: 15px;
+  left: 950px;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
 
 .phone-block{
     max-width: 90%;
