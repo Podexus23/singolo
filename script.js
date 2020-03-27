@@ -4,7 +4,7 @@ let currentSlide = 1;
 function plusSlides() {
   if (currentSlide === 1) {
     currentSlide = 2;
-    slider.style.transform = 'translateX(-50%)';
+    slider.style.transform = 'translateX(-100%)';
   } else {
     slider.style.transform = 'translateX(0%)';
     currentSlide = 1;

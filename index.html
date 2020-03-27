@@ -46,16 +46,22 @@
         <div class="slider" data-js="sslide">
              <div class="slide-block">
                   <div class="phone-block">
-                      <div class="phone-one" onclick="switchFirstPhone()"></div>
-                      <div class="phone-two" onclick="switchSecondPhone()"></div>
+                    <div class="phone-one-wrapper">
+                        <div class="phone-one" onclick="switchFirstPhone()"></div>
+                        <div class="phone-shadow"></div>
+                      </div>
+                      <div class="phone-two-wrapper">
+                        <div class="phone-two" onclick="switchSecondPhone()"></div>
+                        <div class="phone-shadow"></div>
+                      </div>
                   </div>
              </div>
              <div class="slide-block second-slide">
                  
              </div>
         </div>
-        <a class="prev" onclick="plusSlides(-1)"><img src="assets/ArrowLeft.svg" alt="left arrow"></a>
-        <a class="next" onclick="plusSlides(1)"><img src="assets/ArrowRight.svg" alt="right arrow"></a>
+        <a class="prev" onclick="plusSlides()"><img src="assets/ArrowLeft.svg" alt="left arrow"></a>
+        <a class="next" onclick="plusSlides()"><img src="assets/ArrowRight.svg" alt="right arrow"></a>
     </div>
 
 
