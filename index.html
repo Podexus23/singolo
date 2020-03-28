@@ -41,6 +41,27 @@
         </div>    
     </header>
 
+    <div class="header-modile">
+        <div class='burger' onclick='openNav();'> &#9776; </div>
+        <div class="title">
+            <h1><a href="#">SINGOLO</a></h1>                
+        </div>
+    </div>
+
+    <div id="mySidepanel" class="sidepanel">
+        <div class='burger' onclick='closeNav();'> &#9776; </div>
+        <div class="title">
+            <h1><a href="#">SINGOLO</a></h1>                
+        </div>
+         <ul class="navbar">
+            <li class="navlink" data-target="#home"  onclick='setActiveElement(event, "#home")'><a >HOME</a></li>
+            <li class="navlink" data-target="#services"  onclick='setActiveElement(event, "#services")'><a    >SERVICES</a></li>
+            <li class="navlink" data-target="#portfolio"     onclick='setActiveElement(event, "#portfolio")'><a  >PORTFOLIO</a></li>
+            <li class="navlink" data-target="#about"     onclick='setActiveElement(event, "#about")'><a >ABOUT</a></li>
+            <li class="navlink" data-target="#contact"   onclick='setActiveElement(event, "#contact")'><a>CONTACT</a></li>
+        </ul>
+    </div>
+
 
     <div class="slider__container" id="home">
         <div class="slider" data-js="sslide">

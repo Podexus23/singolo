@@ -19,6 +19,11 @@ body {
 }
    
                                                             /*header*/
+
+.header-modile {
+    display: none;
+}   
+
 .wrapper {
     display: flex;
     width: 100%;
@@ -758,6 +763,10 @@ textarea[placeholder] {
   color: #f44336;
   cursor: pointer;
 }
+
+#mySidepanel {
+    display: none;
+}
                                                    /* tablets*/
 
 @media screen and (max-width: 1020px) {
@@ -897,16 +906,7 @@ textarea[placeholder] {
     }
     
     .MainSerInfo p {
-        width: 94%;
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #767e9e;
-        font-family: "Lato300";
-        font-weight: 300;
-        text-align: justify;
-        margin: 27px 0 0 40px;
-        letter-spacing: -0.2;
+        width: 92%;
     }
     
     .servmenu {
@@ -921,17 +921,8 @@ textarea[placeholder] {
         width: 100%;
     }
     
-    .ar1 {
-        order: 1;
-    }
-    
-    .ar2 {
-        order: 2;
-    }
-    
     .serv {
-        flex-basis: 320px;
-        height: 123px;
+        flex-basis: 32.8%;
     }
     
     .serv h3 {
@@ -948,19 +939,7 @@ textarea[placeholder] {
     }
     
     .serv p {
-        width: 22%;
-        font-size: 12px;
-        line-height: 21px;
-        color: #767e9e;
-        font-family: "Lato400";
-        text-align: justify;
-        word-break: break-all;
-        display: block;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        width: 69%;
     }
     
     .serv h3,p{
@@ -979,7 +958,7 @@ textarea[placeholder] {
                                                                 /* SINGOLO2 */
     
     .portfolio-block {
-        height: 866px;
+        height: auto;
     }
     
     .portfolio {
@@ -1039,15 +1018,9 @@ textarea[placeholder] {
     }
     
     .pic-place {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        height: 70.4%;
-        width: 93.2%;
-        padding: 0px 35px 62px 35px;
-        background-color: #2d303a;
-        border-bottom: 5px solid #323746;
+        height: auto;
+        width: 93%;
+        padding: 0% 3.5% 5%;       
     }
     
     .pic-place>img:nth-child(n + 13) {
@@ -1073,22 +1046,15 @@ textarea[placeholder] {
     }
     
     .about_description {
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        padding: 17px 42px 0px 40px;
-        color: #767e9e;
-        font-family: "Lato300";
-        text-align: justify;
-        letter-spacing: -0.13px;
+        height: auto;
+        padding: 17px 42px 44px 40px;
     }
     
     .avatars {
-        display: flex;
         width: 92%;
-        justify-content: space-between;
-        padding: 48px 40px 0px 40px;
+        padding: 0 4%;
     }
+    
     
     .avatar-block {
         display: flex;
@@ -1105,36 +1071,14 @@ textarea[placeholder] {
         font-size: 18px;
         padding-top: 17px;
         max-width: 300px;
-        letter-spacing: 0.1px;
-        color: #666d89;    
-        font-family: "Lato900";
-        text-align: justify;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
     }
     
     .avatar-description {
-        width: 31%;
-        font-size: 12px;
-        line-height: 21px;
-        color: #767e9e;
-        font-family: "Lato400";
-        text-align: justify;
-        padding-top: 10px;
-        letter-spacing: -0.15;
-        margin: 0;
+        width: 100%
     }
     
     .avatar-links {
-        display: flex;
-        justify-content: space-between;
-        width: 15%;
-        padding-top: 23px;
-    }
-    
-    .avatar-block:nth-child(3) > .avatar-links{
-        margin-left: -1px;
+        width: 51.5%;
     }
                                                             /* singolo3 */
         
@@ -1145,27 +1089,9 @@ textarea[placeholder] {
         border-bottom: 6px solid #ea676b;
     }
     
-    .quote-title {
-        font-size: 30px;
-        line-height: 18px;
-        color: #f0d8d9;
-        font-family: "Lato900";
-        text-align: justify;
-        height: 40px;
-        padding: 68px 0px 0px 40px;
-        letter-spacing: -0.19;
-    }
-    
     .quote-desc {
-        width: 94%;
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #f0d8d9;
-        font-family: "Lato300";
-        text-align: justify;
-        padding: 5px 0px 0 40px;
-        letter-spacing: -0.24;
+        width: 92%;
+        padding: 5px 4% 0 4%;
     }
     
     
@@ -1193,18 +1119,7 @@ textarea[placeholder] {
     }
     
     .container form,input,textarea {
-        width: 61%;
-        height: 38px;
-        border: 0px;
-        border-radius: 5px;
-        background-color: #d6564f;
-        font-size: 12px;
-        line-height: 22px;
-        color: #f48c8f;
-        font-family: "Lato400";
-        text-align: justify;
-        text-indent: 15px;
-        padding-bottom: 2px;
+        width: 96.8%;
     }
     
     .container [value="submit"] {
@@ -1215,12 +1130,7 @@ textarea[placeholder] {
     }
     
     .container textarea {
-        width: 61%;
-        height: 202px;
-        border-radius: 5px;
-        background-color: #d6564f;
-        resize: none;
-        text-indent: 13px;
+        width: 96.8%;
     }
     
     textarea[placeholder] {
@@ -1238,12 +1148,7 @@ textarea[placeholder] {
     }
     
     .our-info {
-        display: flex;
-        flex-direction: column;
-        height: 55.5%;
-        justify-content: space-between;
-        letter-spacing: -0.1;
-        width: 33%;
+        width: 35%;
     }
     
     .info-title {
@@ -1257,7 +1162,7 @@ textarea[placeholder] {
     
     .info-description {
         font-size: 12px;
-        width: 30%;
+        width: 91%;
         line-height: 22px;
         color: #f0d8d9;
         font-family: "Lato400";
@@ -1314,9 +1219,7 @@ textarea[placeholder] {
     }
     
     .picture-block {
-        box-sizing: border-box;
-        border: 5px solid transparent;
-        cursor: pointer;
+        margin-bottom: 10px;
     }
     
     .picture-block:hover {
@@ -1397,7 +1300,7 @@ textarea[placeholder] {
 
 @media screen and (max-width: 768px) {
     .slide-block {
-        height: 467px;
+        height: 451px;
     }
 
     .phone-one-wrapper {
@@ -1412,6 +1315,21 @@ textarea[placeholder] {
         width: 50%;
         box-shadow: none;
         background-position: center;
+    }
+
+    .phone-shadow {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 24px;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.15);
+        bottom: -20px;
+        right: -13px;
+    }
+
+    .obj2, .obj4, .obj6 {
+        padding-left: 55px;
     }
 
     .our_services {
@@ -1430,6 +1348,7 @@ textarea[placeholder] {
     .MainSerInfo > p{
         height: auto;
         margin: 0;
+        width: 100%;
         padding: 27px 0 42px 0;
     }
 
@@ -1439,7 +1358,6 @@ textarea[placeholder] {
 
     .serv {
         flex-basis: auto;
-        padding: 0 30px 0 0;
     }
 
     .serv > div {
@@ -1447,7 +1365,8 @@ textarea[placeholder] {
     }
 
     .serv p {
-        width: auto;
+        width: 77%;
+        line-height: 22px;
     }
 
     .pic-place {
@@ -1456,7 +1375,7 @@ textarea[placeholder] {
         justify-content: space-evenly;
         height: auto;
         width: 100%;
-        padding: 0 24px;
+        padding: 0 24px 6%;
         box-sizing: border-box;
     }
 
@@ -1487,7 +1406,7 @@ textarea[placeholder] {
     }
 
     #about {
-        padding: 42px;
+        padding: 9% 5%;
     }
 
     .container {
@@ -1514,41 +1433,133 @@ textarea[placeholder] {
 
     .quote-title {
         padding: 0;
+        height: 45px;
     }
 
     .quote-desc {
-        padding: 0 0 30px 0;
+        padding: 0px 0 18px 0;
         width: 100%;
         height: auto;
     }
 
     .quote {
         height: auto;
-        padding: 42px;
+        padding: 8% 5% 5%;
         width: auto;
     }
 
-}
-/* @media (min-width: 375px) and (max-width: 767px) {
-    header {
-        display: flex;
-        position: fixed;
-        background-color: #2D303A;
-        width: 100%;
-        height: 75px;
-        z-index: 5;
-        border-bottom: 0px;
+    .portfolio {
+        height: 200px;
+        background-color: #2d303a;
+    }
+
+    .container [value="submit"] {
+        background-color: #FBC65F;
+        text-align: -webkit-center;
+        width: 30%;
+        text-indent: 0;
+        cursor: pointer;
+        color: #886A30;
     }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
     header {
-        display: flex;
-        position: fixed;
-        background-color: #2D303A;
-        width: 100%;
-        height: 75px;
-        z-index: 5;
-        border-bottom: 0px;
+        display: none;
     }
-} */
+
+    .header-modile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 71px;
+        background-color: #2D303A;
+        position: fixed;
+        z-index: 9;
+    }
+
+    .burger {
+        position: absolute;
+        color: white;
+        left: 20px;
+        top: 24px;
+        font-size: 25px;
+        transition: all 0.5s;
+    }
+
+    .title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19.6875px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+    }
+
+    .slider__container {
+        padding-top: 71px;
+    }
+
+    #mySidepanel {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .sidepanel {
+      height: 100vh; /* Specify a height */
+      width: 0; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 15; /* Stay on top */
+      top: 0;
+      left: 0;
+      background: #2D303A;
+      box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    }
+
+    .sidepanel > .burger {
+        transform: rotate(90deg);
+    }
+
+    .sidepanel > .title > h1 > a {
+        color: white;
+    }
+
+    .sidepanel > .title {
+        padding-top: 12px;
+    }
+
+    .sidepanel ul {
+        flex-direction: column;
+        margin-top: 60%;
+        padding-left: 5px;
+        font-family: "Lato400"; 
+        color: white;
+    }
+
+/* The sidepanel links */
+    .sidepanel a {
+      padding: 12px 8px 12px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      display: block;
+      transition: 0.3s;
+    }
+
+/* When you mouse over the navigation links, change their color */
+    .sidepanel a:hover {
+      color: #F06C64;
+    }
+
+    .navbar li:before {
+        display: none;
+    }
+    
+    .serv {
+        padding: 0 ;
+    }
+
+}

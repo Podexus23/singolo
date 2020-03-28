@@ -11,6 +11,16 @@ function plusSlides() {
   }
 }
 
+let mySidepanel = document.getElementById('mySidepanel');
+
+function openNav() {
+  mySidepanel.style.width = "278px";
+}
+
+function closeNav() {
+  mySidepanel.style.width = "0";
+}
+
 function switchFirstPhone() {
     document.querySelector(".phone-one").classList.toggle("phone-one-off");
 }
@@ -64,7 +74,7 @@ function makeActive(event) {
 }
 
 
-let modalWindow = document.getElementById('modal-window')
+let modalWindow = document.getElementById('modal-window');
 let formForCheck = document.forms[0];
 
 
@@ -99,6 +109,7 @@ function changeActiveHeaderElement() {
 
 function setActiveElement(event, elementId) {
     document.querySelector(elementId).scrollIntoView({behavior:"smooth", block:"start"});
+    closeNav();
 }
 
 let mainNavLinks = document.querySelectorAll(".header-element");
