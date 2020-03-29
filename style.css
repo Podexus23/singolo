@@ -987,7 +987,7 @@ textarea[placeholder] {
     }
     
     .tags {
-        padding: 11px 0 0 42px;
+        padding: 11px 0 24px 42px;
     }
     
     .tag {
@@ -1300,7 +1300,7 @@ textarea[placeholder] {
 
 @media screen and (max-width: 768px) {
     .slide-block {
-        height: 451px;
+        height: 446px;
     }
 
     .phone-one-wrapper {
@@ -1328,13 +1328,15 @@ textarea[placeholder] {
         right: -13px;
     }
 
-    .obj2, .obj4, .obj6 {
-        padding-left: 55px;
+    .portfolio-title {
+        padding: 70px 0 0 38px;
+        text-align: unset;
+        word-spacing: 2px;
     }
 
     .our_services {
         height: auto;
-        padding: 42px;
+        padding: 49px 42px 11px;
     }
 
     .MainSerInfo {
@@ -1347,6 +1349,7 @@ textarea[placeholder] {
 
     .MainSerInfo > p{
         height: auto;
+        word-spacing: -3px;
         margin: 0;
         width: 100%;
         padding: 27px 0 42px 0;
@@ -1354,10 +1357,13 @@ textarea[placeholder] {
 
     .servmenu {
         padding-left: 0;
+        justify-content: space-between;
     }
 
     .serv {
         flex-basis: auto;
+        padding-right: 33px;
+        padding-bottom: 19px;
     }
 
     .serv > div {
@@ -1375,8 +1381,9 @@ textarea[placeholder] {
         justify-content: space-evenly;
         height: auto;
         width: 100%;
-        padding: 0 24px 6%;
+        padding: 0 24px 6.5%;
         box-sizing: border-box;
+        border-bottom: 8px solid #323746;
     }
 
     #portfolio {
@@ -1385,6 +1392,8 @@ textarea[placeholder] {
 
     .avatar-description {
         width: 100%;
+        padding-top: 3px;
+        line-height: 22px;
     }
 
     .avatar-block > img {
@@ -1402,11 +1411,18 @@ textarea[placeholder] {
 
     .about_description {
         height: auto;
-        padding: 0 0 42px 0;
+        padding: 0px 0 38px 0;
+    }
+
+    .avatar-name {
+        font-size: 18px;
+        padding-top: 13px;
+        max-width: 300px;
     }
 
     #about {
-        padding: 9% 5%;
+        padding: 8.5% 5.5%;
+        border-bottom: 4px solid #ffffff;
     }
 
     .container {
@@ -1429,6 +1445,7 @@ textarea[placeholder] {
     #contact {
         margin: 0;
         width: 100%;
+        height: 372px;
     }
 
     .quote-title {
@@ -1444,12 +1461,12 @@ textarea[placeholder] {
 
     .quote {
         height: auto;
-        padding: 8% 5% 5%;
+        padding: 8% 5.5% 5%;
         width: auto;
     }
 
     .portfolio {
-        height: 200px;
+        height: auto;
         background-color: #2d303a;
     }
 
@@ -1460,6 +1477,33 @@ textarea[placeholder] {
         text-indent: 0;
         cursor: pointer;
         color: #886A30;
+    }
+
+    .prev, .next {
+        margin-top: 20px;
+        padding: 1.6%;
+    }
+
+    .tags {
+        padding: 11px 0 22px 39px;
+    }
+    
+    .prev {
+        margin-left: 20px;
+    }
+
+    ..title-desription {
+        padding: 27px 5% 0;
+    }
+
+    .picture-block img {
+        width: auto;
+    }
+
+    .avatar-links {
+        width: 75%;
+        display: block;
+        padding-top: 10px;
     }
 }
 
@@ -1559,7 +1603,195 @@ textarea[placeholder] {
     }
     
     .serv {
-        padding: 0 ;
+        padding: 0;
+        height: 119px;
     }
 
+    .prev, .next {
+        margin-top: 15px;
+    }
+    .prev {
+        margin-left: 0px;
+    }
+
+    .phone-shadow {
+        bottom: -8px;
+        right: -7px;
+        border-radius: 10px;
+    }
+
+    .phone-one {
+        border-radius: 8px;
+    }
+
+    .slide-block {
+        height: 220px;
+        border-bottom: 0px solid #f06c64;
+    }
+
+    .phone-two-wrapper {
+        height: 36%;
+        width: 49%;
+        box-shadow: none;
+        background-position: center;
+    }
+    
+    .MainSerInfo > p {
+        text-align: inherit;        
+    }
+    
+    .portfolio-title {
+        padding: 50px 0 0 30px;
+    }
+
+    .title-desription{
+        width: auto;
+        height: auto;
+        padding: 8% 8% 2px;
+        text-align: unset;
+    }
+    .serv > div {
+        width: 95%;
+    }
+    .serv p {
+        width: auto;
+        line-height: 22px;
+    }
+
+    .picture-block {
+        width: 50%;
+        margin-bottom: 1px;
+    }
+
+    .picture-block img {
+        width: 100%;        
+    }
+
+    
+
+    #about {
+        padding: 10.7% 8% 3%;
+        border-bottom: 0px;
+    }
+
+    .avatar-block > img {
+        height: 314px;
+    }
+
+    .avatars {
+        width: 100%;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .avatar-block {
+        width: 100%;   
+    }
+    
+    #contact {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        padding-right: 0;
+        flex-shrink: 0;
+        height: auto;
+    }
+
+    .container textarea {
+        height: 160px;        
+    }
+
+    .container [value="submit"] {
+        width: auto;
+        height: 50px;
+    }
+
+    .our-info {
+        width: auto;
+        padding: 27px 0 0 0;
+    }
+
+    .social-links {
+        float: none;
+        padding: 5% 0px 0 0;
+        text-align: center;
+    }
+
+    .copyrights {
+        display: none;
+    }
+
+    .pic-place>.picture-block:nth-child(n + 9) {
+        display: none;
+    }    
+
+    .our_services {
+        padding: 33px 30px 0;
+        border-bottom: 0;
+    }
+
+    .MainSerInfo > p {
+        height: auto;
+        word-spacing: 2px;
+        margin: 0;
+        width: 100%;
+        padding: 29px 0 27px 0;
+    }
+
+    .tags {
+        padding: 11px 0 21px 30px;
+    }
+
+    .pic-place {
+        border-bottom: 11px solid #2d303a;
+    }
+
+    .about_description {
+        height: auto;
+        padding: 0px 0 22px 0;
+        text-align: unset;
+    }
+
+    .avatar-description {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .avatar-links {
+        width: 75%;
+        display: block;
+        padding-top: 11px;
+        padding-bottom: 29px;
+    }
+
+    .quote {
+        height: auto;
+        padding: 14% 8% 11%;
+        width: auto;
+        border-bottom: 0;
+    }
+
+    .container > input, .container > textarea {
+        width: 100%;
+        margin: 6px 0;
+    }
+
+    .quote-desc {
+        word-spacing: 2px;
+        text-align: unset;
+    }
+
+    .info-description {
+        width: 100%;
+        padding: 3px 0px 12px 0;
+    }
+
+    .place {
+        padding-bottom: 5px;
+    }
 }
