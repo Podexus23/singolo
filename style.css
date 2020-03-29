@@ -987,7 +987,7 @@ textarea[placeholder] {
     }
     
     .tags {
-        padding: 11px 0 0 42px;
+        padding: 11px 0 24px 42px;
     }
     
     .tag {
@@ -1300,7 +1300,7 @@ textarea[placeholder] {
 
 @media screen and (max-width: 768px) {
     .slide-block {
-        height: 451px;
+        height: 446px;
     }
 
     .phone-one-wrapper {
@@ -1329,7 +1329,7 @@ textarea[placeholder] {
     }
 
     .obj2, .obj4, .obj6 {
-        padding-left: 55px;
+        
     }
 
     .our_services {
@@ -1347,6 +1347,7 @@ textarea[placeholder] {
 
     .MainSerInfo > p{
         height: auto;
+        word-spacing: -3px;
         margin: 0;
         width: 100%;
         padding: 27px 0 42px 0;
@@ -1354,10 +1355,12 @@ textarea[placeholder] {
 
     .servmenu {
         padding-left: 0;
+        justify-content: space-between;
     }
 
     .serv {
         flex-basis: auto;
+        padding-right: 33px;
     }
 
     .serv > div {
@@ -1449,7 +1452,7 @@ textarea[placeholder] {
     }
 
     .portfolio {
-        height: 200px;
+        height: auto;
         background-color: #2d303a;
     }
 
@@ -1460,6 +1463,24 @@ textarea[placeholder] {
         text-indent: 0;
         cursor: pointer;
         color: #886A30;
+    }
+
+    .prev, .next {
+        margin-top: 20px;
+        padding: 1.6%;
+    }
+    
+    .prev {
+        margin-left: 20px;
+    }
+
+    .title-desription{
+        padding: 27px 5% 0;
+    }
+
+    .picture-block img {
+        width: auto;
+        height: auto;
     }
 }
 
@@ -1562,4 +1583,54 @@ textarea[placeholder] {
         padding: 0 ;
     }
 
+    .prev, .next {
+        margin-top: 15px;
+    }
+    .prev {
+        margin-left: 0px;
+    }
+
+    .phone-shadow {
+        bottom: -8px;
+        right: -7px;
+        border-radius: 10px;
+    }
+
+    .phone-one {
+        border-radius: 8px;
+    }
+
+    .slide-block {
+        height: 220px;
+        border-bottom: 0px solid #f06c64;
+    }
+
+    .phone-two-wrapper {
+        height: 36%;
+        width: 49%;
+        box-shadow: none;
+        background-position: center;
+    }
+    
+    .MainSerInfo > p {
+        word-spacing: -3px;
+        text-align: inherit;        
+    }
+    
+    .portfolio-title {
+        padding: 60px 0 0 36px;
+    }
+
+    .title-desription{
+        width: auto;
+    height: auto;
+    padding: 5% 10% 0;
+    }
+    .serv > div {
+        width: auto;
+    }
+    .serv p {
+        width: auto;
+        line-height: 22px;
+    }
 }

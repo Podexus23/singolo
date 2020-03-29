@@ -30,32 +30,27 @@ function switchSecondPhone() {
 }
 
 function togglePictureBlock(filterName) {
-    document.querySelectorAll(".picture-block").forEach(item => item.style.order="4");
     document.querySelectorAll(".tag").forEach(item => item.classList.remove("active"));
+
+    Array.from(document.querySelectorAll(".picture-block"))
+    .sort(() => Math.random() - 0.5)
+    .forEach((elem) => document.querySelector('.pic-place').appendChild(elem));
     
+
     switch (filterName) {
         case "all":
             document.querySelector(".all-tag").classList.add("active")
             break;
 
         case "web":
-            document.querySelectorAll(".web").forEach(item => item.style.order="1");
-            document.querySelectorAll(".art").forEach(item => item.style.order="2");
             document.querySelector(".web-tag").classList.add("active")
         break;
 
-        case "graph":
-            document.querySelectorAll(".graph").forEach(item => item.style.order="1");
-            document.querySelectorAll(".art").forEach(item => item.style.order="2");
-            document.querySelectorAll(".second-pic").forEach(item => item.style.order="1");
+        case "graph":      
             document.querySelector(".graph-tag").classList.add("active")
         break;
 
         case "art":
-            document.querySelectorAll(".art").forEach(item => item.style.order="1");
-            document.querySelectorAll(".first-pic").forEach(item => item.style.order="2");
-            document.querySelectorAll(".web").forEach(item => item.style.order="3");
-            document.querySelectorAll(".third-pic").forEach(item => item.style.order="2");
             document.querySelector(".art-tag").classList.add("active")
         break;
     
